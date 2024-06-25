@@ -11,7 +11,7 @@ public class DemoController {
 
     @GetMapping
     @PreAuthorize("hasRole('client_user')")
-    public String hello() {
+    public String helloClient() {
         return "Hello from SpringBoot Keycloak - USER";
     }
 
